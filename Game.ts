@@ -104,7 +104,7 @@ export class Game extends Component {
 
     onLoad (): void {
         //i18n.init( UrlParameters.language );
-        l10n.changeLanguage( UrlParameters.language );//在调用此方法后，会自动重启游戏，
+        l10n.changeLanguage( 'en' );//UrlParameters.language );//在调用此方法后，会自动重启游戏，
 
         if ( this._disposer ) {
             this._disposer.push( mobx.autorun( () => {
